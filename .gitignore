@@ -3,7 +3,7 @@
 .m2/
 output/
 similarities.json
-
+documents/
 .idea
 target/
 # Log file
