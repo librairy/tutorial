@@ -173,6 +173,14 @@
             </snapshots>
         </repository>
         <repository>
+            <id>librAiry-metrics</id>
+            <url>https://raw.github.com/librairy/metrics/mvn-repo/</url>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+            </snapshots>
+        </repository>
+        <repository>
             <id>test-utils</id>
             <url>https://raw.github.com/cbadenes/test-utils/mvn-repo/</url>
             <snapshots>
