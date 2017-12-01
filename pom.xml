@@ -54,7 +54,7 @@
         <surefire.junit.plugin.version>2.12</surefire.junit.plugin.version>
 
         <!-- Project Dependencies -->
-        <librairy.version>1.8</librairy.version>
+        <librairy.version>1.8.1</librairy.version>
 
         <!-- Test Dependencies -->
         <junit.version>4.12</junit.version>
@@ -159,14 +159,6 @@
         <repository>
             <id>librAiry-client</id>
             <url>https://raw.github.com/librairy/client/mvn-repo/</url>
-            <snapshots>
-                <enabled>true</enabled>
-                <updatePolicy>always</updatePolicy>
-            </snapshots>
-        </repository>
-        <repository>
-            <id>librAiry-boot</id>
-            <url>https://raw.github.com/librairy/boot/mvn-repo/</url>
             <snapshots>
                 <enabled>true</enabled>
                 <updatePolicy>always</updatePolicy>
