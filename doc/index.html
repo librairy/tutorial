@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Cross-lingual Search Engine</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/resume.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+      <span class="d-block d-lg-none">Build a large-scale cross-lingual text search engine from scratch</span>
+      <span class="d-none d-lg-block">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/librairy-logo.png" alt="">
+      </span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#abstract">Abstract</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#audience">Audience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#structure">Structure</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#resources">Resources</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#slides">Slides</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#tutors">Tutors</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container-fluid p-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="abstract">
+      <div class="w-100">
+        <h1 class="mb-0">cross-lingual search engine
+          <span class="text-primary">from scratch</span>
+        </h1>
+        <div class="subheading mb-5">Build a large-scale cross-lingual text search engine from scratch at
+          <a href="http://www.k-cap.org/2019/index.html">K-CAP 2019</a>
+        </div>
+        <p class="mb-0">Searching for similar documents and exploring major themes covered across groups of documents are common actions when browsing collections of scientific papers. This manual, knowledge-intensive task may become less tedious and even lead to unforeseen relevant  findings if unsupervised algorithms are applied to help researchers. Most text mining algorithms represent documents in a common feature space that abstracts away from the specific sequence of words used in them. Probabilistic Topic Models reduce that feature space by annotating documents with thematic information. Over this low-dimensional latent space some algorithms have been proposed to perform document similarity search. However, text search engines are based on algorithms that use term matching to measure similarity among texts (e.g TF-IDF, BM25) making a prior translation of multilingual texts required to relate them. In large-scale scenarios, this requirement is dificult to assume due to its high computational and storage cost. </p>
+        <p class="mb-0">The aim of this tutorial is to show the foundations and modern practical applications of knowledge-based and statistical methods for exploring large document corpora. It will first focus on many of the techniques required for this purpose, including natural language processing tasks, approximate nearest neighbours methods, clustering algorithms, probabilistic topic models, and will then describe how a combination of these techniques is being used in practical applications for browsing large multilingual document corpora without the need to translate texts. Participants will be involved in the entire process of creating the necessary resources to finally build a multilingual text search engine.</p>
+        <div class="social-icons">
+          <a href="http://github.com/librairy">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://twitter.com/librairy_fw">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="audience">
+      <div class="w-100">
+        <h2 class="mb-5">Intended Audience</h2>
+
+        <p class="mb-0">Researchers and partitioners seeking algorithms and tools to explore multilingual unstructured text data, that are working on research areas such as: information retrieval, knowledge modeling, data mining, natural language processing, and web information systems. We assume that most participants will be familiar with the basic principles of the semantic web. This tutorial proposal is for a half-day and intends to attract around 25-35 participants.</p>
+
+      </div>
+
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="structure">
+      <div class="w-100">
+        <h2 class="mb-5">Tutorial Structure</h2>
+
+        <p class="mb-0">The tutorial will be decomposed into three parts, consisting each of slides and hands-on exercises:</p>
+        <ul>
+          <li><p class="mb-0">The first part deals with the problem of representing documents and discovering relations among them based on similar content when working on a large scale. We will argue for the choice of using probabilistic topic models as foundations and we will illustrate how the resulting low-dimensional latent space can be used to relate similar documents. The slides will be complemented by hands-on exercises using open-source tools in Python for natural language processing (e.g spaCy), machine learning (e.g sickit-learn) and topic modeling (e.g Gensim) from Jupyter notebooks.</p></li>
+          <li><p class="mb-0">The second part focuses on each of the techniques used to measure document similarity regardless of the language used. The theoretical foundations are accompanied by tools that allow us to understand how they work through practical exercises. The audience will learn how to use <a href="http://librairy.linkeddata.es">librAIry</a> modules to process and annotate unstructured texts in different languages. Models describing the main topics covered in a corpus will be created, and inferences will be made about new documents using these models</p></li>
+          <li><p class="mb-0">Finally, the third part uses all of the above to build a multilingual search engine. The audience will be encouraged to create and to play with the system in order to discover its advanced search on their own document collections. We will also present models and datasets to be used from search engines focused on public procurement data.</p></li>
+        </ul>
+
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="resources">
+      <div class="w-100">
+        <h2 class="mb-5">Resources</h2>
+
+        <p class="mb-0">The tutorial will include hands-on sessions with use of open source tools such as <a href="https://www.docker.com/">Docker</a> containers and Jupiter notebooks.</p>
+        <p class="mb-0">Docker CE is publicly and freely available (multiple platforms are supported). To use the notebooks only a web browser is required (Google Chrome recommended). Participants should bring their personal laptops, although it is not mandatory.</p>
+
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="slides">
+      <div class="w-100">
+        <h2 class="mb-5">Slides</h2>
+
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="tutors">
+      <div class="w-100">
+        <h2 class="mb-5">Tutors</h2>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Carlos Badenes-Olmedo</h3>
+            <div class="subheading mb-3">OEG-UPM, Madrid, Spain</div>
+            <span class="d-none d-lg-block">
+              <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="http://librairy.linkeddata.es/assets/images/cabadol-zoom-606x768.png" width="100" height="100" alt="">
+            </span>
+            <p>Carlos Badenes-Olmedo is a research assistant and software engineer with experience in the machine-to-machine industry developing real-time systems. He is currently involved on a PhD in Artificial Intelligence at Universidad Politécnica de Madrid, where he also received the MSc degree in AI in 2015. His research areas are natural language processing and machine learning algorithms in document retrieval tasks to explore large-scale corpora. He has participated in the development of new tools and algorithms for text mining in R+D+i domains (mainly patents, scientific publications and public aids) for decision-makers and policy implementers such as Corpus Viewer platform, which is currently used by three public administrations: the Secretary of State for Digital Advancement (SEAD) (Ministry of Economy and Business), the Spanish Foundation for Science and Technology (FECYT) and the Secretary of State for Universities and Research, Development and Innovation (SEUIDI) (Ministry of Science).</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary"><a href="mailto:cbadenes@fi.upm.es">mail</a> - <a href="http://cbadenes.github.io">homepage</a></span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Jose-Luis Redondo-Garcia</h3>
+            <div class="subheading mb-3">Amazon Alexa, Cambridge, UK</div>
+            <span class="d-none d-lg-block">
+              <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="http://librairy.linkeddata.es/assets/images/jlredondo-200x200.jpg" width="100" height="100" alt="">
+            </span>
+            <p> José Luis Redondo-García works as an applied scientist in the Alexa Natural Language Understanding team, focusing on making Alexa smarter and available in an ever-growing number of languages. He investigates the impact of incorporating sophisticated data selection methods and neural-based models into voice-enabled interactions. His evolving research interests include Natural Language Processing, Knowledge Representation, and Semantic Web. His work on automatically collecting and ranking contextual entities in international news obtained the Best Paper Award at the international conference KCAP 2015. José Luis has worked as a Postdoc with the Ontology Engineering Group at the Artificial Intelligent Faculty, Universidad Politécnica de Madrid, studying the potential of ontology learning and topic modeling techniques to make sense out of big collections of textual documents. From 2012 to 2016 he pursued his PhD with the Doctoral School Telecom Paristech, in France. As a member of the Data Science department at Eurecom Institute in Sophia Antipolis, he has been involved in different national and european projects such as LinkedTV, MediaMixer, o 3Cixty.</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary"><a href="mailto:jluisred@amazon.com">mail</a> - <a href="http://jluisred.github.io">homepage</a></span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Oscar Corcho</h3>
+            <div class="subheading mb-3">OEG-UPM, Madrid, Spain</div>
+            <span class="d-none d-lg-block">
+              <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="http://librairy.linkeddata.es/assets/images/1067341-80x80.jpg" width="100" height="100" alt="">
+            </span>
+            <p>Oscar Corcho is Full Professor at Universidad Politécnica de Madrid (UPM), and he belongs to the Ontology Engineering Group (OEG). As part of his involvement in the Open Data Institute node in Madrid, Oscar leads the Spanish thematic network on Open Data for Smart Cities, where joint guidelines and vocabularies are being proposed for the harmonisation of datasets across open data portals in Spain. He has been also involved in the creation of the Spanish technical norm UNE178301:2015 on Open Data for Smart Cities, which proposes a maturity model to assess and improve the quality of open data implementations for cities, and on the ongoing OjoalData100 initiative for the identification of the 100 most relevant open datasets for cities. And he has advised on the implementation of the open data API for Zaragoza. Furthermore, in 2013 Oscar co-founded Localidata, a company specialised on providing support on the implementation of open data strategies by cities.</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary"><a href="mailto:ocorcho@fi.upm.es">mail</a> - <a href="https://bit.ly/2WMJg5H">homepage</a></span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/resume.min.js"></script>
+
+</body>
+
+</html>
