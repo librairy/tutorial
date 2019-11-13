@@ -26,7 +26,7 @@
 <body id="page-top">
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+    <a class="navbar-brand js-scroll-trigger" href="http://librairy.linkeddata.es/">
       <span class="d-block d-lg-none">Build a large-scale cross-lingual text search engine from scratch</span>
       <span class="d-none d-lg-block">
         <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/librairy-logo.png" alt="">
@@ -47,10 +47,7 @@
           <a class="nav-link js-scroll-trigger" href="#structure">Structure</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#resources">Resources</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#slides">Slides</a>
+          <a class="nav-link js-scroll-trigger" href="#requirements">Requirements</a>
         </li>
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#tutors">Tutors</a>
@@ -71,14 +68,14 @@
         </div>
         <p class="mb-0">Searching for similar documents and exploring major themes covered across groups of documents are common actions when browsing collections of scientific papers. This manual, knowledge-intensive task may become less tedious and even lead to unforeseen relevant  findings if unsupervised algorithms are applied to help researchers. Most text mining algorithms represent documents in a common feature space that abstracts away from the specific sequence of words used in them. Probabilistic Topic Models reduce that feature space by annotating documents with thematic information. Over this low-dimensional latent space some algorithms have been proposed to perform document similarity search. However, text search engines are based on algorithms that use term matching to measure similarity among texts (e.g TF-IDF, BM25) making a prior translation of multilingual texts required to relate them. In large-scale scenarios, this requirement is dificult to assume due to its high computational and storage cost. </p>
         <p class="mb-0">The aim of this tutorial is to show the foundations and modern practical applications of knowledge-based and statistical methods for exploring large document corpora. It will first focus on many of the techniques required for this purpose, including natural language processing tasks, approximate nearest neighbours methods, clustering algorithms, probabilistic topic models, and will then describe how a combination of these techniques is being used in practical applications for browsing large multilingual document corpora without the need to translate texts. Participants will be involved in the entire process of creating the necessary resources to finally build a multilingual text search engine.</p>
-        <div class="social-icons">
-          <a href="http://github.com/librairy">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="https://twitter.com/librairy_fw">
-            <i class="fab fa-twitter"></i>
-          </a>
-        </div>
+<!--        <div class="social-icons">-->
+<!--          <a href="http://github.com/librairy">-->
+<!--            <i class="fab fa-github"></i>-->
+<!--          </a>-->
+<!--          <a href="https://twitter.com/librairy_fw">-->
+<!--            <i class="fab fa-twitter"></i>-->
+<!--          </a>-->
+<!--        </div>-->
       </div>
     </section>
 
@@ -90,7 +87,7 @@
 
         <p class="mb-0">Imagine we got a huge collection of un-labelled, human-generated documents and we would like to explore the knowledge inside. Imagine that we could run an unsupervised, automated pipeline to generate connections between them... What are the main anchors or subjects to start browsing the information from? From the anchors, how could we enable humans to hop across relevant pieces of infor- mation, by going deeper on a topic or discovering new ones? In this tutorial we show state-of-the art techniques to programmatically generating annotations for each of the texts inside big collections of documents,in a way that is computationally a ordable and enables a semantic-aware exploration of the knowledge inside it.</p></br>
 
-        <p class="mb-0">In this tutorial we show state-of-the art techniques to programmatically generating annotations for each of the texts inside big collections of documents,in a way that is computationally a ordable and enables a semantic-aware exploration of the knowledge inside it.</p></br>
+        <p class="mb-0">In this tutorial we show state-of-the art techniques to programmatically generating annotations for each of the texts inside big collections of documents,in a way that is computationally affordable and enables a semantic-aware exploration of the knowledge inside it.</p></br>
 
         <p class="mb-0">It is oriented to researchers and partitioners seeking algorithms and tools to explore multilingual unstructured text data, that are working on research areas such as: information retrieval, knowledge modeling, data mining, natural language processing, and web information systems. We assume that most participants will be familiar with the basic principles of the semantic web. This tutorial proposal is for a half-day and intends to attract around 25-35 participants.</p>
 
@@ -105,11 +102,11 @@
       <div class="w-100">
         <h2 class="mb-5">Tutorial Structure</h2>
 
-        <p class="mb-0">The tutorial will be decomposed into three parts, consisting each of slides and hands-on exercises:</p>
+        <p class="mb-0">The tutorial will be decomposed into two parts, consisting each of slides and hands-on exercises:</p>
         <ul>
-          <li><p class="mb-0">The first part deals with the problem of representing documents and discovering relations among them based on similar content when working on a large scale. We will argue for the choice of using probabilistic topic models as foundations and we will illustrate how the resulting low-dimensional latent space can be used to relate similar documents. The slides will be complemented by hands-on exercises using open-source tools in Python for natural language processing (e.g spaCy), machine learning (e.g sickit-learn) and topic modeling (e.g Gensim) from Jupyter notebooks.</p></li>
-          <li><p class="mb-0">The second part focuses on each of the techniques used to measure document similarity regardless of the language used. The theoretical foundations are accompanied by tools that allow us to understand how they work through practical exercises. The audience will learn how to use <a href="http://librairy.linkeddata.es">librAIry</a> modules to process and annotate unstructured texts in different languages. Models describing the main topics covered in a corpus will be created, and inferences will be made about new documents using these models</p></li>
-          <li><p class="mb-0">Finally, the third part uses all of the above to build a multilingual search engine. The audience will be encouraged to create and to play with the system in order to discover its advanced search on their own document collections. We will also present models and datasets to be used from search engines focused on public procurement data.</p></li>
+          <li><p class="mb-0">The first part deals with the problem of representing documents and discovering relations among them based on similar content when working on a large scale. We will argue for the choice of using probabilistic topic models as foundations and we will illustrate how the resulting low-dimensional latent space can be used to relate similar documents regardless of the language used. The slides will be complemented by hands-on exercises using open-source tools in Python for natural language processing, machine learning and topic modeling from Jupyter notebooks. The theoretical foundations are accompanied by tools that allow us to understand how they work through practical exercises. (90 minutes)</p></li>
+          <p class="mb-0"> </p>
+          <li><p class="mb-0">Finally, the second part uses all of the above to build a multilingual search engine. The audience will learn how to use <a href="http://librairy.linkeddata.es">librAIry</a> modules to process and annotate unstructured texts in different languages. Models describing the main topics covered in a corpus will be created, and inferences will be made about new documents using these models. (90 minutes)</p></li>
         </ul>
 
       </div>
@@ -117,22 +114,14 @@
 
     <hr class="m-0">
 
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="resources">
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="requirements">
       <div class="w-100">
-        <h2 class="mb-5">Resources</h2>
-
-        <p class="mb-0">The tutorial will include hands-on sessions with use of open source tools such as <a href="https://www.docker.com/">Docker</a> containers and Jupiter notebooks.</p>
-        <p class="mb-0">Docker CE is publicly and freely available (multiple platforms are supported). To use the notebooks only a web browser is required (Google Chrome recommended). Participants should bring their personal laptops, although it is not mandatory.</p>
-
-      </div>
-    </section>
-
-    <hr class="m-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="slides">
-      <div class="w-100">
-        <h2 class="mb-5">Slides</h2>
-
+        <h2 class="mb-5">Requirements</h2>
+        <ul>
+          <li><p class="mb-0">Please bring a laptop. You will need to have a <a href="https://mail.google.com/mail/signup">Google account</a> (Gmail) and it helps to have a <a href="https://github.com/join">GitHub</a> account too.</p></li>
+          <li><p class="mb-0">We will use <a href="https://jupyter.org/"> Jupyter </a> notebooks running on <a href="https://colab.research.google.com/">Google Colab</a> , so there is no need to install or configure anything specially for the exercises.</p></li>
+          <li><p class="mb-0"><a href="https://docs.docker.com/install/">Docker-Engine</a>  and <a href="https://docs.docker.com/compose/install/">Docker-Engine</a> are required for demo, as well as a <a href="https://hub.docker.com/signup">DockerHub</a>  account for exporting the models.</p></li>
+        </ul>
       </div>
     </section>
 
@@ -144,6 +133,7 @@
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
+            <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="http://librairy.github.io/assets/images/cabadol-zoom-606x768.png" height="15%" width="10%" alt="">
             <h3 class="mb-0">Carlos Badenes-Olmedo</h3>
             <div class="subheading mb-3">OEG-UPM, Madrid, Spain</div>
             <span class="d-none d-lg-block">
@@ -158,6 +148,7 @@
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
+            <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="http://librairy.github.io/assets/images/jlredondo-200x200.jpg" height="15%" width="10%" alt="">
             <h3 class="mb-0">Jose Luis Redondo-Garcia</h3>
             <div class="subheading mb-3">Amazon Alexa, Cambridge, UK</div>
             <span class="d-none d-lg-block">
@@ -172,6 +163,7 @@
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
+            <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="http://librairy.github.io/assets/images/1067341-80x80.jpg" height="15%" width="10%" alt="">
             <h3 class="mb-0">Oscar Corcho</h3>
             <div class="subheading mb-3">OEG-UPM, Madrid, Spain</div>
             <span class="d-none d-lg-block">
