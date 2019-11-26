@@ -27,8 +27,13 @@ The tutorial will be decomposed into two parts, consisting each of slides and ha
 * Docker-Engine and Docker-Compose are required for demo, as well as a DockerHub account for exporting the models as Restful APIs.
 
 ### Material
-* Cross-lingual Similarity: [slides](https://www.slideshare.net/CarlosBadenes/crosslingual-similarity), [text-similarity-notebook](https://colab.research.google.com/drive/1CwHQHegE2OIsoYv-5took2RHyf32eH6R), [document-similarity-notebook](https://colab.research.google.com/drive/1O5zHAGdb-W8OTbM4PV73TE_u8CsFJT7_)
-* Cross-lingual Search Engine: [slides](https://www.slideshare.net/CarlosBadenes/crosslingual-searchengine), [librAIry-notebook](https://drive.google.com/file/d/1rDJ7lD5G0vEfd0a1lpJFjt_z57dlMCbH/view)
+* Cross-lingual Similarity: 
+   * [slides](https://www.slideshare.net/CarlosBadenes/crosslingual-similarity)
+   * [text-similarity-notebook](https://colab.research.google.com/drive/1CwHQHegE2OIsoYv-5took2RHyf32eH6R)
+   * [document-similarity-notebook](https://colab.research.google.com/drive/1O5zHAGdb-W8OTbM4PV73TE_u8CsFJT7_)
+* Cross-lingual Search Engine: 
+   * [slides](https://www.slideshare.net/CarlosBadenes/crosslingual-searchengine)
+   * [librAIry-notebook](https://drive.google.com/file/d/1rDJ7lD5G0vEfd0a1lpJFjt_z57dlMCbH/view)
 
 ### Tutors
 
